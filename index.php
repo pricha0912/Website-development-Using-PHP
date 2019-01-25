@@ -1,0 +1,1 @@
+<?php header("Location: http://www.pegasusdesignhouse.com/student/login.php");  exit();?>

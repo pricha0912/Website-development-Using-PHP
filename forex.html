@@ -1,0 +1,464 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-wjs"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-wjs"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-wjs"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-wjs"> <!--<![endif]-->
+
+<head>
+	<title>GoodWind - Overseas Education Consultant</title>
+	
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    
+    <!-- Favicon --> 
+	<link rel="shortcut icon" href="images/favicon.html">
+    
+    <!-- this styles only adds some repairs on idevices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Google fonts - witch you want to use - (rest you can just remove) -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.wjs"></script>
+	<![endif]-->
+    
+    <!-- ######### CSS STYLES ######### -->
+	
+    <link rel="stylesheet" href="css/wreset.css" type="text/css" />
+	<link rel="stylesheet" href="css/wstyle.css" type="text/css" />
+    
+    <!-- responsive devices styles -->
+	<link rel="stylesheet" media="screen" href="css/wresponsive-leyouts.css" type="text/css" />
+    
+    
+    <!-- iosslider -->
+	<link rel = "stylesheet" media = "screen" href = "wjs/iosslider/common.css" />
+    
+    <!-- jquery jcarousel -->
+    <link rel="stylesheet" type="text/css" href="wjs/jcarousel/skin.css" />
+    
+    <!-- faqs -->
+    <link rel="stylesheet" href="wjs/accordion/accordion.css" type="text/css" media="all">
+
+<style type="text/css">
+
+.containergood{
+position: relative;
+width: 180px; /*marquee width */
+height: 100px; /*marquee height */
+overflow: hidden;
+background-color: white;
+
+padding: 2px;
+padding-left: 0px;
+
+}
+
+</style>
+
+<script type="text/javascript">
+
+var zxcMarquee={
+
+ init:function(o){
+  var mde=o.Mode,mde=typeof(mde)=='string'&&mde.charAt(0).toUpperCase()=='H'?['left','offsetWidth','top','width']:['top','offsetHeight','left','height'],id=o.ID,srt=o.StartDelay,ud=o.StartDirection,p=document.getElementById(id),obj=p.getElementsByTagName('DIV')[0],sz=obj[mde[1]],clone;
+  p.style.overflow='hidden';
+  obj.style.position='absolute';
+  obj.style[mde[0]]='0px';
+  obj.style[mde[3]]=sz+'px';
+  clone=obj.cloneNode(true);
+  clone.style[mde[0]]=sz+'px';
+  clone.style[mde[2]]='0px';
+  obj.appendChild(clone);
+  o=this['zxc'+id]={
+   obj:obj,
+   mde:mde[0],
+   sz:sz
+  }
+  if (typeof(srt)=='number'){
+   o.dly=setTimeout(function(){ zxcMarquee.scroll(id,typeof(ud)=='number'?ud:-1); },srt);
+  }
+  else {
+   this.scroll(id,0)
+  }
+ },
+
+ scroll:function(id,ud){
+  var oop=this,o=this['zxc'+id],p;
+  if (o){
+   ud=typeof(ud)=='number'?ud:0;
+   clearTimeout(o.dly);
+   p=parseInt(o.obj.style[o.mde])+ud;
+   if ((ud>0&&p>0)||(ud<0&&p<-o.sz)){
+    p+=o.sz*(ud>0?-1:1);
+   }
+   o.obj.style[o.mde]=p+'px';
+   o.dly=setTimeout(function(){ oop.scroll(id,ud); },50);
+  }
+ }
+}
+
+function init(){
+
+ zxcMarquee.init({
+  ID:'marquee1',     // the unique ID name of the parent DIV.                        (string)
+  Mode:'Vertical',   //(optional) the mode of execution, 'Vertical' or 'Horizontal'. (string, default = 'Vertical')
+  StartDelay:2000,   //(optional) the auto start delay in milli seconds'.            (number, default = no auto start)
+  StartDirection:-1  //(optional) the auto start scroll direction'.                  (number, default = -1)
+ });
+
+ zxcMarquee.init({
+  ID:'marquee2',     // the unique ID name of the parent DIV.                        (string)
+  Mode:'Horizontal', //(optional) the mode of execution, 'Vertical' or 'Horizontal'. (string, default = 'Vertical')
+  StartDelay:2000,   //(optional) the auto start delay in milli seconds'.            (number, default = no auto start)
+  StartDirection:-1  //(optional) the auto start scroll direction'.                  (number, default = -1)
+ });
+
+}
+
+if (window.addEventListener)
+ window.addEventListener("load", init, false)
+else if (window.attachEvent)
+ window.attachEvent("onload", init)
+else if (document.getElementById)
+ window.onload=init
+
+
+</script>
+    
+
+    
+</head>
+
+<body>
+
+<div class="site_wrapper">
+	
+    <div class="container_full">
+    
+       	
+        <div class="top_section">
+    
+    	<div class="container">
+
+    		<div id="logo"><a href="index.html" class="site_logo"><h1>Good<i>Wind</i></h1><span class="logo_caption">Overseas Education Consultant</span></a></div><!-- end logo -->
+            	
+               <nav id="access" class="access" role="navigation">
+                <div id="menu" class="menu">
+                    
+                    <ul id="tiny">
+                    
+                        <li><a href="index.html">Home</a></li>  
+                        
+                        <li><a href="#">About Us</a></li>
+                        
+                        <li><a href="#">Services</a>
+                        
+                        	<ul>
+                            	<li><a href="#">Education Consultant</a></li>
+                                <li><a href="#">Visas</a></li>
+                                <li><a href="#">Universities</a></li>
+                                
+							</ul>
+                        </li>
+                        
+                        <li><a href="#">Contact Us</a></li>
+                        
+                        <li><a href="login.php">Login</a>
+                        
+                        	
+                               
+                        </li>
+                        
+                        <li><a href="#">Offers</a></li>
+                        
+                        
+                    </ul>
+                </div>
+                
+          </nav>
+                
+
+		</div> 
+
+	</div>
+    
+   <div class="top_shadow"></div><!-- end shadow -->
+
+   </div><!-- end top -->
+
+
+
+<!-- Content
+======================================= --> 
+
+<div class="page_title">
+
+	<div class="container">
+		<div class="leaft_title"><h1>Forex Card</h1></div>
+        <div class="reght_pagenation"><a href="index.html">Home</a> <i>/</i> <a href="#">Pages</a> <i>/</i> Forex Card</div>
+	</div>
+</div><!-- end page title -->   
+
+
+<div class="container">
+
+<div class="content_left">
+    
+    	<h2>Forex Card</h2>
+        
+        <p>GoodWind offers Forex Card to its student. Its one of the best offer student cannot reject it. It helps student to get instant money abroad. Also they can use the card to get cash at any forex atm worldwide.</p>
+        
+        <div class="clearfix mar_top2"></div>
+        
+        
+        
+        <div class="clearfix divider_line3"></div>
+       
+       
+       
+        
+        <h2>Why You Should Get Forex Card</h2>
+        	
+            
+            <ul class="lirt_section">
+            	<li class="left">1</li>
+                <li><strong>Enjoy a hassle-free journey abroad with our Forex Card</strong> <i>The Forex Card is designed for customers who travel across the globe. It is a unique product with multiple currencies loaded on the same card, thus eliminating the need to carry multiple cards . </i></li>
+            </ul><!-- end section -->
+            
+            <div class="clearfix mar_top2"></div>
+            
+            <ul class="lirt_section">
+            	<li class="left">2</li>
+                <li><strong>A single card for multiple destinations</strong> <i>Load up to 16 currencies on a single card, and enjoy a hassle-free journey around the globe. You can use a single ATM PIN to access your account online or withdraw funds. </i></li>
+            </ul><!-- end section -->
+            
+            <div class="clearfix mar_top2"></div>
+            
+            <ul class="lirt_section">
+            	<li class="left">3</li>
+                <li><strong>Stay protected from currency fluctuations</strong> <i>With locked-in exchange rates, you won’t be paying cross-currency charges and will make your payments abroad at the rate you loaded/reloaded your card.</i></li>
+            </ul><!-- end section -->
+            
+            <div class="clearfix mar_top2"></div>
+            
+            <ul class="lirt_section">
+            	<li class="left">4</li>
+                <li><strong>24x7 access to your funds</strong> <i>Swipe your card at over 30 million Visa merchant outlets and 1,000 e-commerce websites, or withdraw funds from 1 million plus VISA ATMs.</i></li>
+            </ul><!-- end section -->
+            
+            <div class="clearfix mar_top2"></div>
+            
+            <ul class="lirt_section">
+            	<li class="left">5</li>
+                <li><strong>Global Customer Assistance across the globe</strong> <i>Replace a lost card, or get emergency cash delivered while you are travelling overseas. Simply call Visa’s Global Customer Assistance Services to avail these services.</i></li>
+            </ul><!-- end section -->
+            
+           <!-- <div class="clearfix mar_top2"></div>
+            
+            <ul class="lirt_section">
+            	<li class="left">6</li>
+                <li><strong>Custom BG Patterns, Unlimited Colors and Shortcodes</strong> <i>Professional Website Design and Development Services and Fully Satisfied Customers Worldwide</i></li>
+            </ul><!-- end section -->
+            
+           <!-- <div class="clearfix mar_top2"></div>
+            
+            <ul class="lirt_section">
+            	<li class="left">7</li>
+                <li><strong>5 Different Home page Versions</strong> <i>Professional Website Design and Development Services and Fully Satisfied Customers Worldwide</i></li>
+            </ul><!-- end section -->
+            
+          <!--  <div class="clearfix mar_top2"></div>
+            
+            <ul class="lirt_section">
+            	<li class="left">8</li>
+                <li><strong>Useful Typography Elements</strong> <i>Professional Website Design and Development Services and Fully Satisfied Customers Worldwide</i></li>
+            </ul><!-- end section -->
+            
+          <!--  <div class="clearfix mar_top2"></div>
+            
+            <ul class="lirt_section">
+            	<li class="left">9</li>
+                <li><strong>Cross Browser Support and Layered PSD Files</strong> <i>Professional Website Design and Development Services and Fully Satisfied Customers Worldwide</i></li>
+            </ul><!-- end section -->
+
+        
+        	<!-- end more features section -->
+        <br><br>
+        
+        <a href="admission.html" class="readmore_02">Apply Now</a>
+
+</div><!-- end content left side area -->
+
+
+
+
+<!-- right sidebar starts -->
+<div class="right_sidebar">
+<div class="sidebar_widget">
+    
+    	<a href="courier.html"><img src="img/ad3.jpg" width="100%"></a>
+	</div><!-- end section -->
+	
+	<div class="sidebar_widget">
+    
+    	<a href="loan.html"><img src="img/ad1.jpg" width="100%"></a>
+	</div><!-- end section -->
+	
+    
+	
+    
+    <div class="clearfix mar_top3"></div>
+    
+    <div class="sidebar_widget">
+    
+    	<strong>Testimonials</strong>
+                
+					<div id="marquee1" class="containergood" onmouseover="zxcMarquee.scroll('marquee1',0);" onmouseout="zxcMarquee.scroll('marquee1',-1);">
+						<div style="position: absolute; width: 98%;">
+						<p style="margin-top: 0"><b><a href="#">Mrs. Malti Shah</a></b><br>Very homely atmosphere. Excellent staff. Would surely recommend!</p>
+						
+						<p><b><a href="#">Ms. Bindia Shah</a></b><br>Goodwind gives lots of personal attention and provides minute details, which are vital for admission/visa processes.</p>
+
+						<p><b><a href="#">Mr. Vivek Bhallala</a></b><br>Trustworthy, efficient, pure professionals.</p>
+						</div>
+						</div>
+	</div><!-- end section -->
+    
+    <div class="sidebar_widget">
+    	<h3>More Links</h3>
+		<ul class="arrows_list1">		
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Education Loan</a></li>
+            <li><a href="#">Contact Us</a></li>
+           
+		</ul>
+	</div><!-- end section -->
+    
+    
+    
+    
+        
+
+
+	
+</div>
+
+
+
+
+
+</div>
+<div class="clearfix mar_top7"></div>
+
+<!-- Footer
+======================================= -->
+
+<div id="footer">
+
+
+ 	
+    
+	<div class="copyright_info">
+    
+    	<div class="container">
+        
+    	<div class="one_half"><b>Copyright © 2017 GoodWind Education All rights reserved</b></div>
+		
+        <div class="one_half last">
+        	<span><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></span>
+                    
+        </div>
+        
+		</div>
+        
+    </div><!-- end copyright info -->  
+
+</div>
+
+
+    
+
+
+
+
+
+
+<a href="#" class="close icon-chevron-right"></a>  
+    
+</div>
+</div>
+</div><!-- end style switcher -->
+
+
+<a href="#" class="scrollup">Scroll</a><!-- end scroll to top of the page-->
+   
+   
+
+</div>
+
+    
+<!-- ######### JS FILES ######### -->
+<!-- get jQuery from the google apis -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+
+
+
+<!-- main menu -->
+<script type="text/javascript" src="wjs/mainmenu/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="wjs/mainmenu/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="wjs/mainmenu/selectnav.js"></script>
+
+<!-- jquery jcarousel -->
+<script type="text/javascript" src="wjs/jcarousel/jquery.jcarousel.min.js"></script>
+
+<!-- iosSlider plugin -->
+<script src = "wjs/iosslider/_src/jquery.iosslider.js"></script>
+<script src = "wjs/iosslider/_lib/jquery.easing-1.3.js"></script>
+<script src = "wjs/iosslider/_src/custom.js"></script>
+
+<script type="text/javascript" src="wjs/mainmenu/scripts.js"></script>
+
+
+<!-- scroll up -->
+<script type="text/javascript">
+    $(document).ready(function(){
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+ 
+    });
+</script>
+
+
+<!-- jquery jcarousel -->
+<script type="text/javascript">
+
+	jQuery(document).ready(function() {
+			jQuery('#mycarousel').jcarousel();
+	});
+	
+	jQuery(document).ready(function() {
+			jQuery('#mycarouseltwo').jcarousel();
+	});
+	
+</script>
+
+<script type="text/javascript" src="wjs/accordion/custom.js"></script>
+
+</body>
+</html>

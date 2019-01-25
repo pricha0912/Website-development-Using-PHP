@@ -1,0 +1,757 @@
+<!doctype html>
+<!--[if IE 7 ]>    <html lang="en-gb" class="isie ie7 oldie no-js"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-gb" class="isie ie8 oldie no-js"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en-gb" class="isie ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en-gb" class="no-js"> <!--<![endif]-->
+
+<head>
+	<title>GoodWind - Overseas Education Consultant</title>
+	
+	<meta charset="utf-8">
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+    
+    <!-- Favicon --> 
+	<link rel="shortcut icon" href="images/favicon.html">
+    
+    <!-- this styles only adds some repairs on idevices  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- Google fonts - witch you want to use - (rest you can just remove) -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
+    
+    <!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+    
+    <!-- ######### CSS STYLES ######### -->
+	
+    <link rel="stylesheet" href="css/wreset.css" type="text/css" />
+	<link rel="stylesheet" href="css/wstyle.css" type="text/css" />
+    
+    <!-- responsive devices styles -->
+	<link rel="stylesheet" media="screen" href="css/wresponsive-leyouts.css" type="text/css" />
+    
+
+    
+    
+    <!-- iosslider -->
+	<link rel = "stylesheet" media = "screen" href = "wjs/iosslider/common.css" />
+    
+    <!-- jquery jcarousel -->
+    <link rel="stylesheet" type="text/css" href="wjs/jcarousel/skin.css" />
+    
+    <!-- faqs -->
+    <link rel="stylesheet" href="wjs/accordion/accordion.css" type="text/css" media="all">
+
+<style type="text/css">
+
+.containergood{
+position: relative;
+width: 180px; /*marquee width */
+height: 100px; /*marquee height */
+overflow: hidden;
+background-color: white;
+
+padding: 2px;
+padding-left: 0px;
+
+}
+
+</style>
+
+<script type="text/javascript">
+
+var zxcMarquee={
+
+ init:function(o){
+  var mde=o.Mode,mde=typeof(mde)=='string'&&mde.charAt(0).toUpperCase()=='H'?['left','offsetWidth','top','width']:['top','offsetHeight','left','height'],id=o.ID,srt=o.StartDelay,ud=o.StartDirection,p=document.getElementById(id),obj=p.getElementsByTagName('DIV')[0],sz=obj[mde[1]],clone;
+  p.style.overflow='hidden';
+  obj.style.position='absolute';
+  obj.style[mde[0]]='0px';
+  obj.style[mde[3]]=sz+'px';
+  clone=obj.cloneNode(true);
+  clone.style[mde[0]]=sz+'px';
+  clone.style[mde[2]]='0px';
+  obj.appendChild(clone);
+  o=this['zxc'+id]={
+   obj:obj,
+   mde:mde[0],
+   sz:sz
+  }
+  if (typeof(srt)=='number'){
+   o.dly=setTimeout(function(){ zxcMarquee.scroll(id,typeof(ud)=='number'?ud:-1); },srt);
+  }
+  else {
+   this.scroll(id,0)
+  }
+ },
+
+ scroll:function(id,ud){
+  var oop=this,o=this['zxc'+id],p;
+  if (o){
+   ud=typeof(ud)=='number'?ud:0;
+   clearTimeout(o.dly);
+   p=parseInt(o.obj.style[o.mde])+ud;
+   if ((ud>0&&p>0)||(ud<0&&p<-o.sz)){
+    p+=o.sz*(ud>0?-1:1);
+   }
+   o.obj.style[o.mde]=p+'px';
+   o.dly=setTimeout(function(){ oop.scroll(id,ud); },50);
+  }
+ }
+}
+
+function init(){
+
+ zxcMarquee.init({
+  ID:'marquee1',     // the unique ID name of the parent DIV.                        (string)
+  Mode:'Vertical',   //(optional) the mode of execution, 'Vertical' or 'Horizontal'. (string, default = 'Vertical')
+  StartDelay:2000,   //(optional) the auto start delay in milli seconds'.            (number, default = no auto start)
+  StartDirection:-1  //(optional) the auto start scroll direction'.                  (number, default = -1)
+ });
+
+ zxcMarquee.init({
+  ID:'marquee2',     // the unique ID name of the parent DIV.                        (string)
+  Mode:'Horizontal', //(optional) the mode of execution, 'Vertical' or 'Horizontal'. (string, default = 'Vertical')
+  StartDelay:2000,   //(optional) the auto start delay in milli seconds'.            (number, default = no auto start)
+  StartDirection:-1  //(optional) the auto start scroll direction'.                  (number, default = -1)
+ });
+
+}
+
+if (window.addEventListener)
+ window.addEventListener("load", init, false)
+else if (window.attachEvent)
+ window.attachEvent("onload", init)
+else if (document.getElementById)
+ window.onload=init
+
+
+</script>
+    
+</head>
+
+<body>
+
+<div class="site_wrapper">
+	
+    <div class="container_full">
+    
+    
+    	
+        <div class="top_section">
+    
+    	<div class="container">
+
+    		<div id="logo"><a href="index.html" class="site_logo"><h1>Pegasus<i>Infotech</i></h1><span class="logo_caption">Web development</span></a></div><!-- end logo -->
+            	
+               <nav id="access" class="access" role="navigation">
+                <div id="menu" class="menu">
+                    
+                    <ul id="tiny">
+                    
+                        <li><a href="index.html" class="active">Home</a></li>  
+                        
+                        <li><a href="about-us.php">About Us</a></li>
+                        
+                        <li><a href="#">Services</a>
+                        
+                        	<ul>
+                            	<li><a href="#">Education Consultant</a></li>
+                                <li><a href="#">Visas</a></li>
+                                <li><a href="#">Universities</a></li>
+                                
+							</ul>
+                        </li>
+                        
+                        <li><a href="assistance.php">Contact Us</a></li>
+                        
+                        <li><a href="login.php">Login</a>
+                        
+                        	
+                               
+                        </li>
+                        
+                        <li><a href="#">Offers</a>
+						
+							<ul>
+							<li><a href="courier.html">Courier</a></li>
+                            <li><a href="forex.html">Forex Card</a></li>
+							</ul>
+						</li>
+                        
+                        
+                    </ul>
+                </div>
+                
+          </nav>
+                
+
+		</div> 
+
+	</div>
+    
+   <div class="top_shadow"></div><!-- end shadow -->
+
+   </div><!-- end top -->
+
+
+
+   
+<!-- Slider
+======================================= -->  
+  <!-- slider --> 
+  <!-- #region Jssor Slider Begin -->
+    <!-- Generator: Jssor Slider Maker -->
+    <!-- Source: http://www.jssor.com -->
+    <!-- This code works without jquery library. -->
+    <script src="js/jssor.slider-22.0.15.min.js" type="text/javascript" data-library="jssor.slider" data-version="22.0.15"></script>
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1000,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$SlideOut:true,$Easing:$Jease$.$OutQuad},
+              {$Duration:1200,y:0.3,$Cols:2,$During:{$Top:[0.3,0.7]},$ChessMode:{$Column:12},$Easing:{$Top:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1000,x:-1,y:2,$Rows:2,$Zoom:11,$Rotate:1,$SlideOut:true,$Assembly:2049,$ChessMode:{$Row:15},$Easing:{$Left:$Jease$.$InExpo,$Top:$Jease$.$InExpo,$Zoom:$Jease$.$InExpo,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InExpo},$Opacity:2,$Round:{$Rotate:0.85}},
+              {$Duration:1200,x:4,$Cols:2,$Zoom:11,$SlideOut:true,$Assembly:2049,$ChessMode:{$Column:15},$Easing:{$Left:$Jease$.$InExpo,$Zoom:$Jease$.$InExpo,$Opacity:$Jease$.$Linear},$Opacity:2},
+              {$Duration:1000,x:4,y:-4,$Zoom:11,$Rotate:1,$SlideOut:true,$Easing:{$Left:$Jease$.$InExpo,$Top:$Jease$.$InExpo,$Zoom:$Jease$.$InExpo,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InExpo},$Opacity:2,$Round:{$Rotate:0.8}},
+              {$Duration:1500,x:0.3,y:-0.3,$Delay:80,$Cols:8,$Rows:4,$Clip:15,$During:{$Left:[0.3,0.7],$Top:[0.3,0.7]},$Easing:{$Left:$Jease$.$InJump,$Top:$Jease$.$InJump,$Clip:$Jease$.$OutQuad},$Round:{$Left:0.8,$Top:2.5}},
+              {$Duration:1000,x:-3,y:1,$Rows:2,$Zoom:11,$Rotate:1,$SlideOut:true,$Assembly:2049,$ChessMode:{$Row:28},$Easing:{$Left:$Jease$.$InExpo,$Top:$Jease$.$InExpo,$Zoom:$Jease$.$InExpo,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InExpo},$Opacity:2,$Round:{$Rotate:0.7}},
+              {$Duration:1200,y:-1,$Cols:8,$Rows:4,$Clip:15,$During:{$Top:[0.5,0.5],$Clip:[0,0.5]},$Formation:$JssorSlideshowFormations$.$FormationStraight,$ChessMode:{$Column:12},$ScaleClip:0.5},
+              {$Duration:1000,x:0.5,y:0.5,$Zoom:1,$Rotate:1,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Top:$Jease$.$InCubic,$Zoom:$Jease$.$InCubic,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$InCubic},$Opacity:2,$Round:{$Rotate:0.5}},
+              {$Duration:1200,x:-0.6,y:-0.6,$Zoom:1,$Rotate:1,$During:{$Left:[0.2,0.8],$Top:[0.2,0.8],$Zoom:[0.2,0.8],$Rotate:[0.2,0.8]},$Easing:{$Zoom:$Jease$.$Swing,$Opacity:$Jease$.$Linear,$Rotate:$Jease$.$Swing},$Opacity:2,$Round:{$Rotate:0.5}},
+              {$Duration:1500,y:-0.5,$Delay:60,$Cols:15,$SlideOut:true,$Formation:$JssorSlideshowFormations$.$FormationCircle,$Easing:$Jease$.$InWave,$Round:{$Top:1.5}},
+              {$Duration:1000,$Delay:30,$Cols:8,$Rows:4,$Clip:15,$Formation:$JssorSlideshowFormations$.$FormationStraightStairs,$Assembly:2050,$Easing:$Jease$.$InQuad},
+              {$Duration:1200,$Delay:20,$Clip:3,$SlideOut:true,$Assembly:260,$Easing:{$Clip:$Jease$.$OutCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
+            ];
+
+            var jssor_1_SlideoTransitions = [
+              [{b:-1,d:1,o:-1},{b:0,d:1200,y:300,o:1,e:{y:24,o:6}},{b:5600,d:800,y:-200,o:-1,e:{y:5}}],
+              [{b:-1,d:1,o:-1},{b:400,d:800,x:200,o:1,e:{x:27,o:6}},{b:5600,d:800,x:-200,o:-1,e:{x:5}}],
+              [{b:-1,d:1,o:-1},{b:400,d:800,x:-200,o:1,e:{x:27,o:6}},{b:5600,d:800,x:200,o:-1,e:{x:5}}],
+              [{b:-1,d:1,o:-1},{b:1600,d:600,x:200,y:-200,o:1,e:{x:3,y:3}},{b:5600,d:800,o:-1}],
+              [{b:4600,d:960,x:-204}],
+              [{b:-1,d:1,sX:-1,sY:-1},{b:3400,d:400,sX:1,sY:1},{b:3800,d:300,o:-1,sX:0.1,sY:0.1}],
+              [{b:-1,d:1,sX:-1,sY:-1},{b:3520,d:400,sX:1,sY:1},{b:3920,d:300,o:-1,sX:0.1,sY:0.1}],
+              [{b:-1,d:1,o:-1},{b:2200,d:1200,x:-135,y:-24,o:1,e:{x:7,y:7}},{b:4600,d:640,x:-130}],
+              [{b:-1,d:1,o:-1},{b:4600,d:240,x:-75,o:1,e:{x:1}},{b:4840,d:480,x:-150,e:{x:1}},{b:5320,d:240,x:-75,o:-1,e:{x:1}}],
+              [{b:2800,d:600,y:70,sX:-0.5,sY:-0.5,e:{y:5}},{b:6000,d:600,y:50,r:-10},{b:7000,d:400,o:-1,rX:10,rY:-10}],
+              [{b:0,d:600,x:-742,sX:4,sY:4,e:{x:6}},{b:900,d:600,sX:-4,sY:-4}],
+              [{b:-1,d:1,o:-1},{b:400,d:500,o:1,e:{o:5}}],
+              [{b:-1,d:1,o:-1,r:-180},{b:1500,d:500,o:1,r:180,e:{r:27}}],
+              [{b:-1,d:1,o:-1,r:180},{b:2000,d:500,o:1,r:-180,e:{r:27}}],
+              [{b:2800,d:600,y:-270,e:{y:6}}],
+              [{b:6000,d:600,y:-100,r:-10,e:{y:6}},{b:7000,d:400,o:-1,rX:-10,rY:10}],
+              [{b:-1,d:1,sX:-1,sY:-1},{b:3400,d:400,sX:1.33,sY:1.33,e:{sX:7,sY:7}},{b:3800,d:200,sX:-0.33,sY:-0.33,e:{sX:16,sY:16}}],
+              [{b:-1,d:1,o:-1},{b:3400,d:600,o:1},{b:4000,d:1000,r:360,e:{r:1}}],
+              [{b:-1,d:1,o:-1},{b:3400,d:600,y:-70,o:1,e:{y:27}}],
+              [{b:-1,d:1,sX:-1,sY:-1},{b:3700,d:400,sX:1.33,sY:1.33,e:{sX:7,sY:7}},{b:4100,d:200,sX:-0.33,sY:-0.33,e:{sX:16,sY:16}}],
+              [{b:-1,d:1,o:-1},{b:3700,d:600,o:1},{b:4300,d:1000,r:360}],
+              [{b:-1,d:1,o:-1},{b:3700,d:600,x:-150,o:1,e:{x:27}}],
+              [{b:-1,d:1,sX:-1,sY:-1},{b:4000,d:400,sX:1.33,sY:1.33,e:{sX:7,sY:7}},{b:4400,d:200,sX:-0.33,sY:-0.33,e:{sX:16,sY:16}}],
+              [{b:-1,d:1,o:-1},{b:4000,d:600,o:1},{b:4600,d:1000,r:360}],
+              [{b:-1,d:1,o:-1},{b:4000,d:600,x:150,o:1,e:{x:27}}],
+              [{b:9300,d:600,o:-1,r:540,sX:-0.5,sY:-0.5,e:{r:5}}],
+              [{b:-1,d:1,o:-1,sX:2,sY:2},{b:6880,d:20,o:1},{b:6900,d:300,sX:-2.08,sY:-2.08,e:{sX:27,sY:27}},{b:7200,d:240,sX:0.08,sY:0.08}],
+              [{b:-1,d:1,o:-1,sX:5,sY:5},{b:6300,d:600,o:1,sX:-5,sY:-5}],
+              [{b:-1,d:1,o:-1},{b:7200,d:440,o:1}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:7420,d:20,o:1},{b:7440,d:200,r:180,sX:0.4,sY:0.4},{b:7640,d:200,r:180,sX:0.5,sY:0.5}],
+              [{b:-1,d:1,o:-1,r:-60,sX:-0.9,sY:-0.9},{b:7620,d:20,o:1},{b:7640,d:300,r:60,sX:1.1,sY:1.1},{b:7940,d:160,sX:-0.2,sY:-0.2}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:7920,d:20,o:1},{b:7940,d:300,sX:1.4,sY:1.4},{b:8240,d:160,sX:-0.5,sY:-0.5}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:7620,d:20,o:1},{b:7640,d:200,r:180,sX:0.4,sY:0.4},{b:7840,d:200,r:180,sX:0.5,sY:0.5}],
+              [{b:-1,d:1,o:-1,r:-60,sX:-0.9,sY:-0.9},{b:7820,d:20,o:1},{b:7840,d:300,r:60,sX:1.1,sY:1.1},{b:8140,d:160,sX:-0.2,sY:-0.2}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:8120,d:20,o:1},{b:8140,d:300,sX:1.4,sY:1.4},{b:8440,d:160,sX:-0.5,sY:-0.5}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:7820,d:20,o:1},{b:7840,d:200,r:180,sX:0.4,sY:0.4},{b:8040,d:200,r:180,sX:0.5,sY:0.5}],
+              [{b:-1,d:1,o:-1,r:-60,sX:-0.9,sY:-0.9},{b:8020,d:20,o:1},{b:8040,d:300,r:60,sX:1.1,sY:1.1},{b:8340,d:160,sX:-0.2,sY:-0.2}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:8320,d:20,o:1},{b:8340,d:300,sX:1.4,sY:1.4},{b:8640,d:160,sX:-0.5,sY:-0.5}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:8020,d:20,o:1},{b:8040,d:200,r:180,sX:0.4,sY:0.4},{b:8240,d:200,r:180,sX:0.5,sY:0.5}],
+              [{b:-1,d:1,o:-1,r:-60,sX:-0.9,sY:-0.9},{b:8220,d:20,o:1},{b:8240,d:300,r:60,sX:1.1,sY:1.1},{b:8540,d:160,sX:-0.2,sY:-0.2}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:8520,d:20,o:1},{b:8540,d:300,sX:1.4,sY:1.4},{b:8840,d:160,sX:-0.5,sY:-0.5}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:8220,d:20,o:1},{b:8240,d:200,r:180,sX:0.4,sY:0.4},{b:8440,d:200,r:180,sX:0.5,sY:0.5}],
+              [{b:-1,d:1,o:-1,r:-60,sX:-0.9,sY:-0.9},{b:8420,d:20,o:1},{b:8440,d:300,r:60,sX:1.1,sY:1.1},{b:8740,d:160,sX:-0.2,sY:-0.2}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:8720,d:20,o:1},{b:8740,d:300,sX:1.4,sY:1.4},{b:9040,d:160,sX:-0.5,sY:-0.5}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:8220,d:20,o:1},{b:8240,d:200,r:180,sX:0.4,sY:0.4},{b:8440,d:200,r:180,sX:0.5,sY:0.5}],
+              [{b:-1,d:1,o:-1,r:-60,sX:-0.9,sY:-0.9},{b:8420,d:20,o:1},{b:8440,d:300,r:60,sX:1.1,sY:1.1},{b:8740,d:160,sX:-0.2,sY:-0.2}],
+              [{b:-1,d:1,o:-1,sX:-0.9,sY:-0.9},{b:8720,d:20,o:1},{b:8740,d:300,sX:1.4,sY:1.4},{b:9040,d:160,sX:-0.5,sY:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:0,d:400,y:330},{b:900,d:400,y:50,rX:80},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:-1,d:1,o:-0.5},{b:900,d:400,o:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:1700,d:400,y:310},{b:2600,d:400,y:50,rX:80},{b:20000,d:1000,y:20},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:20000,d:1000,o:-1}],
+              [{b:-1,d:1,o:-0.5},{b:2600,d:400,o:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:3400,d:400,y:290},{b:5100,d:400,y:50,rX:80},{b:20000,d:1000,y:40},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:20000,d:1000,o:-1}],
+              [{b:-1,d:1,c:{t:-280}},{b:3880,d:20,c:{t:50.40}},{b:3980,d:20,c:{t:33.60}},{b:4080,d:20,c:{t:30.80}},{b:4180,d:20,c:{t:30.80}},{b:4280,d:20,c:{t:33.60}},{b:4380,d:20,c:{t:22.40}},{b:4480,d:20,c:{t:28.00}},{b:4580,d:20,c:{t:50.40}}],
+              [{b:-1,d:1,o:-0.5},{b:5100,d:400,o:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:6000,d:400,y:270},{b:6900,d:400,y:50,rX:40},{b:15000,d:500,rX:40},{b:20000,d:1000,y:60},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:20000,d:1000,o:-1}],
+              [{b:6900,d:400,o:-0.2},{b:15000,d:500,o:-0.8}],
+              [{b:-1,d:1,o:-0.5},{b:15000,d:500,o:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:7800,d:400,y:270},{b:8700,d:400,y:50,rX:40},{b:15000,d:500,rX:40},{b:20000,d:1000,y:60},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:8700,d:400,o:-1}],
+              [{b:-1,d:1,o:-0.5},{b:8700,d:400,o:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:9600,d:400,y:270},{b:10500,d:400,y:50,rX:40},{b:15000,d:500,rX:40},{b:20000,d:1000,y:60},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:10500,d:400,o:-1}],
+              [{b:-1,d:1,o:-0.5},{b:10500,d:400,o:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:11400,d:400,y:270},{b:12300,d:400,y:50,rX:40},{b:15000,d:500,rX:40},{b:20000,d:1000,y:60},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:12300,d:400,o:-1}],
+              [{b:-1,d:1,o:-0.5},{b:12300,d:400,o:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:13200,d:400,y:270},{b:14100,d:400,y:50,rX:40},{b:15000,d:500,rX:40},{b:20000,d:1000,y:60},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:14100,d:400,o:-1}],
+              [{b:-1,d:1,o:-0.5},{b:14100,d:400,o:-0.5}],
+              [{b:-1,d:1,sX:-0.2,sY:-0.2},{b:16000,d:400,y:270},{b:19100,d:400,y:30,rX:80},{b:20000,d:1000,y:80},{b:21000,d:1000,y:-95,rX:-80,sX:0.2,sY:0.2,e:{y:16,rX:16,sX:16,sY:16}},{b:23000,d:900,y:25,o:-1,rX:60}],
+              [{b:20000,d:1000,o:-1}],
+              [{b:-1,d:1,o:-0.5},{b:19100,d:400,o:-0.5}],
+              [{b:-1,d:1,o:-1},{b:16400,d:300,o:1},{b:16700,d:500,x:-238}],
+              [{b:-1,d:1,o:-1},{b:16400,d:300,o:1},{b:16700,d:500,x:238}],
+              [{b:-1,d:1,o:-1},{b:17000,d:400,y:200,o:1,e:{y:2,o:6}},{b:17400,d:300,y:-28,e:{y:3}},{b:17700,d:300,y:28,e:{y:2}}],
+              [{b:-1,d:1,o:-1},{b:17200,d:400,y:200,o:1,e:{y:2,o:6}},{b:17600,d:300,y:-28,e:{y:3}},{b:17900,d:300,y:28,e:{y:2}}],
+              [{b:-1,d:1,o:-1},{b:17400,d:400,y:200,o:1,e:{y:2,o:6}},{b:17800,d:300,y:-28,e:{y:3}},{b:18100,d:300,y:28,e:{y:2}}],
+              [{b:-1,d:1,o:-1},{b:17600,d:400,y:200,o:1,e:{y:2,o:6}},{b:18000,d:300,y:-28,e:{y:3}},{b:18300,d:300,y:28,e:{y:2}}]
+            ];
+
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideDuration: 800,
+              $SlideEasing: $Jease$.$OutQuint,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $CaptionSliderOptions: {
+                $Class: $JssorCaptionSlideo$,
+                $Transitions: jssor_1_SlideoTransitions,
+                $Breaks: [
+                  [{d:2000,b:5600,t:2}],
+                  [{d:2000,b:9300,t:2}],
+                  [{d:2000,b:23000}]
+                ]
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*responsive code begin*/
+            /*you can remove responsive code if you don't want the slider scales while window resizing*/
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 1349);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*responsive code end*/
+        };
+    </script>
+    <style>
+        /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 22 css */
+        /*
+        .jssora22l                  (normal)
+        .jssora22r                  (normal)
+        .jssora22l:hover            (normal mouseover)
+        .jssora22r:hover            (normal mouseover)
+        .jssora22l.jssora22ldn      (mousedown)
+        .jssora22r.jssora22rdn      (mousedown)
+        .jssora22l.jssora22lds      (disabled)
+        .jssora22r.jssora22rds      (disabled)
+        */
+        .jssora22l, .jssora22r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 40px;
+            height: 58px;
+            cursor: pointer;
+            background: url('img/a22.png') center center no-repeat;
+            overflow: hidden;
+        }
+        .jssora22l { background-position: -10px -31px; }
+        .jssora22r { background-position: -70px -31px; }
+        .jssora22l:hover { background-position: -130px -31px; }
+        .jssora22r:hover { background-position: -190px -31px; }
+        .jssora22l.jssora22ldn { background-position: -250px -31px; }
+        .jssora22r.jssora22rdn { background-position: -310px -31px; }
+        .jssora22l.jssora22lds { background-position: -10px -31px; opacity: .3; pointer-events: none; }
+        .jssora22r.jssora22rds { background-position: -70px -31px; opacity: .3; pointer-events: none; }
+    </style>
+    <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;height:300px;overflow:hidden;visibility:hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 980px; height: 300px; overflow: hidden;">
+           
+		   <div data-p="172.50">
+                <div style="position:absolute;top:180px;left:90px;width:480px;height:300px;z-index:1000;font-family:Arial, Verdana;font-size:12px;text-align:left;"><br />
+                   <a href="courier.html"><img border="0" alt="auction slider" width="107" height="25" src="img/find-out-more-bt.png" />
+                    </a>
+                </div>
+                <img style="position:absolute;top:0px;left:0px;width:1395px;height:300px;z-index:0;" src="img/1.png" />
+                <img data-u="thumb" src="img/1.jpg" />
+            </div>
+			
+			<div data-p="172.50">
+                <div style="position:absolute;top:180px;left:90px;width:480px;height:300px;z-index:1000;font-family:Arial, Verdana;font-size:12px;text-align:left;"><br />
+                   <a href="forex.html"><img border="0" alt="auction slider" width="107" height="25" src="img/find-out-more-bt.png" />
+                    </a>
+                </div>
+                <img style="position:absolute;top:0px;left:0px;width:1395px;height:300px;z-index:0;" src="img/2.png" />
+                <img data-u="thumb" src="img/2.jpg" />
+            </div>
+            
+            <div data-p="172.50">
+                <div style="position:absolute;top:120px;left:550px;width:480px;height:300px;z-index:1000;font-family:Arial, Verdana;font-size:12px;text-align:left;"><br />
+                   <a href="loan.html"><img border="0" alt="auction slider" width="107" height="25" src="img/find-out-more-bt.png" />
+                    </a>
+                </div>
+                <img style="position:absolute;top:0px;left:0px;width:1395px;height:300px;z-index:0;" src="img/3.png" />
+                <img data-u="thumb" src="img/3.jpg" />
+            </div>
+            
+            
+            
+            
+        </div>
+        <!-- Thumbnail Navigator -->
+        <div data-u="thumbnavigator" class="jssort04" style="position:absolute;left:0px;bottom:0px;width:980px;height:60px;" data-autocenter="1">
+            <!-- Thumbnail Item Skin Begin -->
+            <div data-u="slides" style="cursor: default;">
+                <div data-u="prototype" class="p">
+                    <div class="w">
+                        <div data-u="thumbnailtemplate" class="t"></div>
+                    </div>
+                    <div class="c"></div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora07l" style="top:0px;left:8px;width:50px;height:50px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora07r" style="top:0px;right:8px;width:50px;height:50px;" data-autocenter="2"></span>
+    </div>
+    <script type="text/javascript">jssor_1_slider_init();</script>
+    <!-- #endregion Jssor Slider End -->
+  
+  
+  <!-- end slider -->
+   
+
+ 
+ 
+<!-- how it works -->
+<div class="container">
+    
+    <div class="clearfix mar_top3"></div>
+        
+    	<ul class="site_features_main">
+        
+        	<li>
+                <img src="images/site-features-icon1.png" alt="" /><br />
+                <strong>Who We Are</strong>
+                <p>Goodwind Education is the leading Overseas Education Consultancy based at Ahmedabad, Gujarat, India. </p>
+                <a href="#" class="readmore_01">Read more</a>
+            </li>
+            
+            <li class="selected">
+                <img src="images/site-features-icon2.png" alt="" /><br />
+                <strong>What We Do</strong>
+                <p>Guaranteed admission, preferably in a university of your choice and Expert visa guidance.</p>
+                <a href="#" class="readmore_01">Read more</a>
+            </li>
+            
+            <li>
+                <img src="images/site-features-icon3.png" alt="" /><br />
+                <strong>Live Video</strong>
+                <p>Live video with univeristy admission officer. Your all queries realted to admission will be answered.</p>
+                <a href="#" class="readmore_01">Read more</a>
+            </li>
+            
+            <li class="last">
+                <img src="images/site-features-icon4.png" alt="" /><br />
+                <strong>Testimonials</strong>
+                
+					<div id="marquee1" class="containergood" onmouseover="zxcMarquee.scroll('marquee1',0);" onmouseout="zxcMarquee.scroll('marquee1',-1);">
+						<div style="position: absolute; width: 98%;">
+						<p style="margin-top: 0"><b><a href="#">Mrs. Malti Shah</a></b><br>Very homely atmosphere. Excellent staff. Would surely recommend!</p>
+						
+						<p><b><a href="#">Ms. Bindia Shah</a></b><br>Goodwind gives lots of personal attention and provides minute details, which are vital for admission/visa processes.</p>
+
+						<p><b><a href="#">Mr. Vivek Bhallala</a></b><br>Trustworthy, efficient, pure professionals.</p>
+						</div>
+						</div>
+
+
+
+                <a href="#" class="readmore_01">Read more</a>
+            </li>
+        
+        </ul>
+
+</div><!-- end how it works -->
+   
+<div class="clearfix mar_top3"></div>
+   
+<div class="container">
+
+	<div class="punchline_text_home">
+    	
+        <div class="left">
+    	<strong>We have had the fortune of being the most trusted Overseas Education Consultants of Gujarat for more than 15 years now.</strong>
+        <p>We have cherished the priviledge of being the most trusted overseas education consultants of Gujarat for more than 15 years and have placed over 10,000 students with our experience, infrastructure and relations. </p>
+		</div>
+    	<div class="right"><a href="#" class="knowmore_but">Know more</a></div>
+    </div>
+
+</div><!-- end punchline text -->
+   
+<div class="clearfix mar_top3"></div>
+
+
+<div class="container">
+
+	<div class="featured_services">
+    	<h2>Featured Services</h2>
+    	<ul class="services_list">
+			<li><img src="images/site-icon1.png" alt="" /><strong>Meticulous Paperwork</strong></li>
+            <li><img src="images/site-icon2.png" alt="" /><strong>Hand Picked Universities</strong></li>
+            <li><img src="images/site-icon3.png" alt="" /><strong>Guaranteed Admissions</strong></li>
+            <li><img src="images/site-icon4.png" alt="" /><strong>Save Money</strong></li>
+            <li><img src="images/site-icon5.png" alt="" /><strong>Visitor Visas</strong></li>
+            <li><img src="images/site-icon5.png" alt="" /><strong>Student Visas</strong></li>
+		</ul>
+        
+        <div class="fuserv_content">
+        	
+            <h2>All this under one roof!</h2>
+            <br>
+            <ul><li>1. Guaranteed admission, preferably in a university of your choice.</li>
+						<li>2. Expert visa guidance, with an above 95% success rate to prove our expertise.</li>
+						<li>3. Cheapest airfare for your flights.</li>
+						<li>4. We help you get overseas medical insurance.</li>
+						<li>5. Help you attain Study Loans / Scholarships.</li>
+						<li>6. Foreign Exchange at competitive rates.</li>
+						<li>7. Post landing services through our own network of 10,000 students we placed abroad.</li>
+					</ul>
+        <div class="clearfix mar_top3"></div>
+        
+        </div>
+    
+    </div>
+    
+
+</div><!-- end featured services -->
+
+<div class="clearfix mar_top2"></div>
+
+
+
+<div class="container">
+
+<div class="latest_blogs">
+
+	<div class="one_full">
+    
+    	<h2>Why Choose Us</h2>
+        
+        
+        <!-- section 1 -->
+        <span class="acc-trigger active"><a href="#">Trusted Agency</a></span>
+        <div class="acc-container">
+        <div class="content">
+        A chance to deal with the most trusted agency in Gujarat for Overseas Admissions and VISA guidance.
+        </div>
+        </div>
+        
+        <!-- section 2 -->
+        <span class="acc-trigger"><a href="#">Guidance</a></span>
+        <div class="acc-container">
+        <div class="content">
+        Guidance about perfect documentation needed for admissions.
+        </div>
+        </div>
+        
+        <!-- section 3 -->
+        <span class="acc-trigger"><a href="#">Interaction</a></span>
+        <div class="acc-container">
+        <div class="content">
+        Interaction with Foreign Universities' admission officers
+        </div>
+        </div>
+		
+		<!-- section 4 -->
+        <span class="acc-trigger"><a href="#">Information</a></span>
+        <div class="acc-container">
+        <div class="content">
+        Perfect information about latest VISA requirements.
+        </div>
+        </div>
+        
+    </div><!-- end latest blogs -->
+    
+    
+    
+     
+	<div class="clearfix divider_line2"></div>
+    
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="clearfix mar_top3"></div>
+
+
+
+
+
+<!-- Footer
+======================================= -->
+
+<div id="footer">
+
+
+ 	
+    
+	<div class="copyright_info">
+    
+    	<div class="container">
+        
+    	<div class="one_half"><b>Copyright © 2017 GoodWind Education All rights reserved</b></div>
+		
+        <div class="one_half last">
+        	<span><a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></span>
+                    
+        </div>
+        
+		</div>
+        
+    </div><!-- end copyright info -->  
+
+</div>
+
+
+    
+
+
+
+
+
+
+<a href="#" class="close icon-chevron-right"></a>  
+    
+</div>
+</div>
+</div><!-- end style switcher -->
+
+
+<a href="#" class="scrollup">Scroll</a><!-- end scroll to top of the page-->
+   
+   
+
+</div>
+
+    
+<!-- ######### JS FILES ######### -->
+<!-- get jQuery from the google apis -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.js"></script>
+
+
+
+<!-- main menu -->
+<script type="text/javascript" src="wjs/mainmenu/ddsmoothmenu.js"></script>
+<script type="text/javascript" src="wjs/mainmenu/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="wjs/mainmenu/selectnav.js"></script>
+
+<!-- jquery jcarousel -->
+<script type="text/javascript" src="wjs/jcarousel/jquery.jcarousel.min.js"></script>
+
+<!-- iosSlider plugin -->
+<script src = "wjs/iosslider/_src/jquery.iosslider.js"></script>
+<script src = "wjs/iosslider/_lib/jquery.easing-1.3.js"></script>
+<script src = "wjs/iosslider/_src/custom.js"></script>
+
+<script type="text/javascript" src="wjs/mainmenu/scripts.js"></script>
+
+
+<!-- scroll up -->
+<script type="text/javascript">
+    $(document).ready(function(){
+ 
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 100) {
+                $('.scrollup').fadeIn();
+            } else {
+                $('.scrollup').fadeOut();
+            }
+        });
+ 
+        $('.scrollup').click(function(){
+            $("html, body").animate({ scrollTop: 0 }, 500);
+            return false;
+        });
+ 
+    });
+</script>
+
+
+<!-- jquery jcarousel -->
+<script type="text/javascript">
+
+	jQuery(document).ready(function() {
+			jQuery('#mycarousel').jcarousel();
+	});
+	
+	jQuery(document).ready(function() {
+			jQuery('#mycarouseltwo').jcarousel();
+	});
+	
+</script>
+
+<script type="text/javascript" src="wjs/accordion/custom.js"></script>
+
+</body>
+</html>
